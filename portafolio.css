@@ -1,0 +1,57 @@
+@media (min-width:600px) {
+    /* Sección principal del portafolio: estilos generales*/
+  #portafolio {
+    background-color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+  }
+/* Contenedor principal*/
+  .contenedor-portafolio {
+    max-width: 1500px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+/* Título del portafolio*/
+  .titulo-portafolio {
+    color: #bd3c74;
+    font-size: 85px;
+    margin-left: 50px;
+  }
+
+  .descripcion-portafolio {
+    font-size: 23px;
+    margin-bottom: 70px;
+    color: #5c749c;
+    font-family:"Poetsen One", sans-serif;
+    font-weight: bold;
+  }
+/* Galería que acomoda los proyectos en filas y columnas*/
+  .galeria-portafolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .item-portafolio {
+    flex: 0 1 calc(50% - 30px);
+    max-width: 450px;
+    text-align: center;
+  }
+/* Imagen de cada proyecto con bordes redondeados*/
+  .item-portafolio img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .item-portafolio p {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #5c749c;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,92 @@
+@media (min-width:600px) {
+    /* Sección principal: estilos generales*/
+  #hoja-de-vida {
+    display: flex;
+    flex-wrap: nowrap; 
+    max-width: 1600px; 
+    margin: 40px auto;
+    background-color: #ffd6e8;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    flex-direction: row;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 40px 20px;
+  }
+/* Contenedor principal*/
+  .contenedor-hoja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .columna-izquierda {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    flex: 1;
+  }
+
+  .columna-derecha {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px 30px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    min-width: 540px;
+    flex: 1;
+    font-size: 17px;
+  }
+
+  .columna-izquierda h3,
+  .columna-derecha h3 {
+    color: #bd3c74;
+    margin-top: 20px;
+  }
+/* Mi foto de perfil */
+  .foto-perfil {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: cover;
+  }
+/* Títulos de la columna izquierda */
+  .columna-izquierda h3 {
+    background-color: #f7d5e4;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+  }
+  .columna-derecha h1 {
+    font-size: 70px;
+    color: #cc4b85;
+    text-align: left;
+    margin-top: -70px;
+  }
+/* Encabezados de cada sección en la columna derecha */
+  .columna-derecha h2 {
+    font-size: 25px;
+    color: #5c749c;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+  .seccion h3 {
+    background-color: white;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+  }
+}

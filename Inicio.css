@@ -1,0 +1,142 @@
+@media (min-width:600px) {
+  /* Estilo general del cuerpo */
+  body {
+    background-color:#000000;
+  }
+
+  h1 {
+    color: #ffffff;
+    row-gap: 50px;
+  }
+
+  h3 {
+    color: #ffffff;
+  }
+/* Encabezado fijo con sombra y alineación de elementos */
+  header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+/* Botones con estilo redondeado y animación al pasar el mouse*/
+  .boton {
+    font-size:27px;
+    padding: 10px 17px;
+    background-color: #333; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    gap: 30px;
+  }
+
+  @keyframes rebote {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .boton:hover {
+    background-color: #bd6d92; 
+    color: black; 
+    animation: rebote 0.3s;
+  }
+/* Texto con degradado animado y rebote */
+  .nombre-degradado {
+    background: linear-gradient(270deg, #ffdbed, #bd3c74, #91c3ff);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    margin-left: 10px;
+    animation: moverDegradado 7s ease infinite, rebote 2s ease-in-out infinite;
+    display: inline-block;
+    text-align: center;
+  }
+
+  @keyframes moverDegradado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  h1 {
+    font-family: "Pacifico", cursive;
+    font-weight:900;
+    text-align: center;
+    position: relative;
+    margin-left: 450px;
+    padding-top: 95px;
+  }
+
+  h3 {
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-weight: 400;
+  }
+
+  nav { 
+    margin-left: 450px;
+    margin-top: 30px;
+  }
+
+  .texto-corto {
+    max-width: 500px; 
+    line-height: 1.5;
+    font-family: "Poetsen One", sans-serif;
+    text-align:center;
+    margin-left: 450px;
+  }
+/* Mi imagen con iluminación al rededor*/
+  .mi-imagen {
+    display: block;
+    margin: 0 auto;
+    width: 580px; 
+    margin-left: 1300px;
+    filter: drop-shadow(1px 1px 20px rgb(255, 142, 194));
+    position: fixed;
+  }
+
+  .mi-imagen:hover { transform: scale(1.1); }
+
+  .imagen-girando {
+    animation: girar 4s linear infinite;
+    position: absolute;
+    top: 140px;    
+    left: 120px;   
+    width: 400px; 
+    filter: drop-shadow(1px 1px 20px rgb(255, 142, 194));
+  }
+/* Imagen de estrella giratoria*/
+  .estrella-derecha {
+    animation: girar 4s linear infinite;
+    position: fixed;
+    top: 140px;
+    right: 120px;
+    width: 400px;
+    filter: drop-shadow(1px 1px 20px rgb(255, 142, 194));
+  }
+
+  @keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+}
